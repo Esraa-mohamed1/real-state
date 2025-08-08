@@ -15,6 +15,9 @@ connectDB();
 const authRoutes = require('./routes/authRoutes');
 app.use('/api/auth', authRoutes);
 
+const paymentRoutes = require('./routes/paymentRoutes');
+app.use('/api/payments', paymentRoutes);
+
 
 app.get('/', (req, res) => {
   res.send('API is running...');
