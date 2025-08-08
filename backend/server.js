@@ -18,6 +18,9 @@ app.use('/api/auth', authRoutes);
 const paymentRoutes = require('./routes/paymentRoutes');
 app.use('/api/payments', paymentRoutes);
 
+const debtRoutes = require('./routes/debtRoutes');
+app.use('/api/debts', debtRoutes);
+
 
 app.get('/', (req, res) => {
   res.send('API is running...');
