@@ -21,6 +21,9 @@ app.use('/api/payments', paymentRoutes);
 const debtRoutes = require('./routes/debtRoutes');
 app.use('/api/debts', debtRoutes);
 
+const propertyRoutes = require('./routes/propertyRoutes');
+app.use('/api/properties', propertyRoutes);
+
 
 app.get('/', (req, res) => {
   res.send('API is running...');
