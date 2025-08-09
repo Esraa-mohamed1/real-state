@@ -261,8 +261,3 @@ curl -H "Authorization: Bearer $TOKEN" http://localhost:5000/api/payments
 - Do not commit `.env` (already ignored by `.gitignore`).
 - Change the default `JWT_SECRET` and admin password in production.
 - Ensure MongoDB is reachable via `MONGO_URI`.
-
----
-
-## License
-MIT (or your organization’s license)
